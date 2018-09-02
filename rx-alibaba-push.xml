@@ -1,0 +1,30 @@
+<prescriptions xmlns="http://greenify.github.io/schemas/prescription/v3">
+	<prescription type="service" class="com.alibaba.sdk.android.push.MsgService" sender="any" />
+	<prescription type="service" class="com.alibaba.sdk.android.push.channel.TaobaoRecvService" sender="any" />
+	<prescription type="service" class="com.alibaba.sdk.android.push.ChannelService" sender="any" />
+	<prescription type="service" class="com.taobao.accs.ChannelService" sender="any" />
+	<prescription type="service" class="com.taobao.accs.ChannelService$KernelService" sender="any" />
+	<prescription type="service" class="com.taobao.accs.data.MsgDistributeService" sender="any" />
+	<prescription type="service" class="com.alipay.android.app.MspService" sender="any" />
+	<prescription type="service" class="com.taobao.agoo.TaobaoMessageIntentReceiverService" sender="any" />
+	<prescription type="broadcast" class="com.taobao.accs.EventReceiver" sender="any" />
+	<prescription type="broadcast" class="com.taobao.accs.ServiceReceiver" sender="any" />
+	<prescription type="broadcast" class="com.taobao.agoo.AgooCommondReceiver" sender="any" />
+	<prescription type="broadcast" sender="any" >
+		<intent-filter>
+			<action name="com.alibaba.push2.action.NOTIFICATION_OPENED" />
+		<intent-filter>
+		</intent-filter>
+			<action name="com.alibaba.push2.action.NOTIFICATION_REMOVED" />
+		<intent-filter>
+		</intent-filter>
+			<action name="com.alibaba.accs.intent.action.COMMAND" />
+		<intent-filter>
+		</intent-filter>
+			<action name="com.alibaba.taobao.intent.action.action.RECEIVE" />
+		<intent-filter>
+		</intent-filter>
+			<action name="org.agoo.android.intent.action.RECEIVE" />
+		</intent-filter>
+	</prescription>
+</prescriptions>
